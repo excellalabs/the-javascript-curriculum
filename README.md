@@ -21,7 +21,7 @@ It is *highly recommended* that your `fork` this repository, keep track of your 
     - [GitExtensions (Windows)](http://sourceforge.net/projects/gitextensions/)
     - [Tower (Mac)](http://www.git-tower.com/)
     - [Github Desktop (Mac/Windows)](https://desktop.github.com/) *In pre-release*
-- [] Now you can `fork` this repo, by using the `fork` button on the top right hand of the GitHub page and start tracking your progress.
+- [ ] Now you can `fork` this repo, by using the `fork` button on the top right hand of the GitHub page and start tracking your progress.
 
 ### Pre-Requisites
 - [ ] Install Node.js, so you can run the self-learning tools: [https://iojs.org/](https://iojs.org/) *_Note:_ iojs and Node.js will very soon become the same thing.*
