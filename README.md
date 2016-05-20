@@ -24,7 +24,7 @@ It is *highly recommended* that your `fork` this repository, keep track of your 
 - [ ] Now you can `fork` this repo, by using the `fork` button on the top right hand of the GitHub page and start tracking your progress.
 
 ### Pre-Requisites
-- [ ] Install Node.js, so you can run the self-learning tools: [https://iojs.org/](https://iojs.org/) *_Note:_ iojs and Node.js will very soon become the same thing.*
+- [ ] Install Node.js, so you can run the self-learning tools: [https://nodejs.org/](https://nodejs.org/)
 - [ ] Visit and familiarize yourself with [npm](https://www.npmjs.com/)
 - [ ] Get a good text editor/IDE.
   - Text Editor
@@ -75,6 +75,11 @@ The Internet is a vast cache of information and if you know how to navigatge it 
 ### Get Started with Node.JS
  - [ ] Learn the basics of node: asynchronous i/o, http.
   - `npm install -g learnyounode`
+ - [ ] Advanced Node Setup
+  - For Windows: https://blog.risingstack.com/node-js-windows-10-tutorial
+  - For Mac/Linux: 
+    - Manage multiple Node versions with n `npm install -g n`
+    - http://docs.python-guide.org/en/latest/starting/install/osx/
  - [ ] Learn a web framework
   - [ ] Hapi.JS `npm install -g makemehapi` http://hapijs.com/
   - [ ] Express `npm install -g expressworks` http://expressjs.com/
