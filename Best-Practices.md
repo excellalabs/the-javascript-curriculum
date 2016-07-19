@@ -40,7 +40,7 @@
       ```
   2. Relying on Comments to Clarify Overly Complex or Confusing Code
       
-      Here's where the explanation goes.
+      
       
       
       Bad Practice
@@ -60,22 +60,7 @@
   3. Storing JavaScript Code in One File
       
       Here's where the explanation goes.
-      
-      
-      Bad Practice
-      ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
-      }
-      ```
      
-      
-     Good Practice
-      ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
-      }
-      ```
   4. Manipulating Globals
       
       Here's where the explanation goes.
