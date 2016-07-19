@@ -23,9 +23,10 @@
       
       Explanation
       
-      Here's where the explanation goes.
+        Here's where the explanation goes.
       
       
+      Bad Practice
       ```javascript
       function test() {
        console.log("look ma`, no spaces");
