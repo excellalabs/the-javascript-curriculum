@@ -19,10 +19,10 @@
 #### Obsolete Practices
 > These coding practices that were once good but have become dated over time and should be avoided.
 
-  1. jQuerying All the Things
+  1. Overusing jQuery
   2. Relying on Comments to Clarify Overly Complex or Confusing Code
-  3. Storing all JS in One File
-  4. Using Globals
+  3. Storing JavaScript Code in One File
+  4. Manipulating Globals
   5. Manipulating Prototypes (manually or in frameworks like date.js)
   6. Using Browser Detection Instead of Feature Detection
 
