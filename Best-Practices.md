@@ -21,9 +21,7 @@
 
   1. Overusing jQuery
       
-      Explanation
-      
-        Here's where the explanation goes.
+      Here's where the explanation goes.
       
       
       Bad Practice
