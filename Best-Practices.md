@@ -20,6 +20,19 @@
 > These coding practices that were once good but have become dated over time and should be avoided.
 
   1. Overusing jQuery
+      Bad Example
+      ```javascript
+      function test() {
+       console.log("look ma`, no spaces");
+      }
+      ```
+      
+     Good Example
+      ```javascript
+      function test() {
+       console.log("look ma`, no spaces");
+      }
+      ```
   2. Relying on Comments to Clarify Overly Complex or Confusing Code
   3. Storing JavaScript Code in One File
   4. Manipulating Globals
