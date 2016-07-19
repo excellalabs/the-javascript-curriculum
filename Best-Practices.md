@@ -21,14 +21,19 @@
 
   1. Overusing jQuery
       
-      Bad Example
+      Explanation
+      
+      Here's where the explanation goes.
+      
+      
       ```javascript
       function test() {
        console.log("look ma`, no spaces");
       }
       ```
+     
       
-     Good Example
+     Good Practice
       ```javascript
       function test() {
        console.log("look ma`, no spaces");
