@@ -20,6 +20,7 @@
 > These coding practices that were once good but have become dated over time and should be avoided.
 
   1. Overusing jQuery
+      
       Bad Example
       ```javascript
       function test() {
