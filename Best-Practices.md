@@ -19,7 +19,7 @@
 #### Obsolete Practices
 > These coding practices that were once good but have become dated over time and should be avoided.
 
-  1. Overusing jQuery
+  1. Overusing/Misusing jQuery
       
       Here's where the explanation goes.
       
