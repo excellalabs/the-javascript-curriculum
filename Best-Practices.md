@@ -21,7 +21,9 @@
 
   1. Overusing jQuery
       
-      Most modern applications use jQuery as an ancillary library, opting for a js framework with features that jQuery doesn't provide (data-binding, routing, etc.) as the primary front-end framework. As such, methods and functions provided by the primary framework should be used before jQuery usage is considered.  Additionally, avoid making duplicate calls.  Instead, store 
+      Most modern applications use jQuery as an ancillary library, opting for a js framework with features that jQuery doesn't provide (data-binding, routing, etc.) as the primary front-end framework. As such, methods and functions provided by the primary framework should be used before jQuery usage is considered.  Additionally:
+      -  Avoid making duplicate calls.  Instead, store the results of the initial call in a variable. 
+      -  Make sure you're using the right call
       
       
       Bad Practice
