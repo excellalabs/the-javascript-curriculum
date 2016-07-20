@@ -19,9 +19,9 @@
 #### Obsolete Practices
 > These coding practices that were once good but have become dated over time and should be avoided.
 
-  1. Overusing/Misusing jQuery
+  1. Overusing jQuery
       
-      Here's where the explanation goes.
+      Most modern applications use jQuery as an ancillary library, opting for a js framework with features that jQuery doesn't provide (data-binding, routing, etc.) as the primary front-end framework. As such, methods and functions provided by the primary framework should be used before jQuery usage is considered.  Additionally, avoid making duplicate calls.  Instead, store 
       
       
       Bad Practice
