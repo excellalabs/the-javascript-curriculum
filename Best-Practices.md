@@ -17,7 +17,7 @@
 > These are coding practices to avoid and habits that you should unlearn.
 
 #### Obsolete Practices
-> These coding practices that were once good but have become dated over time and should be avoided.
+> These are coding practices that were once good but have become dated and should be avoided.
 
   1. Overusing jQuery
       
@@ -27,9 +27,7 @@
       
       Bad Practice
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
-      }
+      $('.descriptionDiv').find('').val();
       ```
      
       
