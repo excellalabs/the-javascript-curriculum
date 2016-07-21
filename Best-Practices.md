@@ -12,6 +12,18 @@
        console.log("look ma`, no spaces");
       }
       ```
+  2. Lines of code per JS file
+  3. `<head>` vs `<body>`
+  4. `'` vs `"`
+  5. Formatting
+        - White space
+        - Curly bracket placement
+        - Line breaks
+        - Semi-colons (yes or no?)
+  6. Shorthand expressions
+  7. Variable declaration
+  8. `that` vs `thisView` vs `self`
+  9. Use of third-party libraries
       
 #### Worst Practices
 > These are coding practices to avoid and habits that you should unlearn.
