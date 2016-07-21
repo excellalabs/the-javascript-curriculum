@@ -16,10 +16,10 @@
   3. `<head>` vs `<body>`
   4. `'` vs `"`
   5. Formatting
-        - White space
-        - Curly bracket placement
-        - Line breaks
-        - Semi-colons (yes or no?)
+      - White space
+      - Curly bracket placement
+      - Line breaks
+      - Semi-colons (yes or no?)
   6. Shorthand expressions
   7. Variable declaration
   8. `that` vs `thisView` vs `self`
