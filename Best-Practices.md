@@ -6,11 +6,26 @@
 
   1. `===` vs `==`
   
-      Lorem ipsum
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
+      function incorrect() {
+       var changeDue = "5.99";
+       if (changeDue == 5.99) {
+        return true;
+       } else {
+        return false;
+       }
       }
+      // output: false
+      
+      function correct() {
+       var changeDue = "5.99";
+       if (changeDue === 5.99) {
+        return true;
+       } else {
+        return false;
+       }
+      }
+      // output: true
       ```
   2. Lines of code per JS file
   3. `<head>` vs `<body>`
