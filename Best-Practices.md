@@ -6,15 +6,54 @@
 
   1. `===` vs `==`
   
-      Lorem ipsum
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
+      function incorrect() {
+       var changeDue = "5.99";
+       if (changeDue == 5.99) {
+        return true;
+       } else {
+        return false;
+       }
       }
+      // output: false
+      
+      function correct() {
+       var changeDue = "5.99";
+       if (changeDue === 5.99) {
+        return true;
+       } else {
+        return false;
+       }
+      }
+      // output: true
       ```
+      
   2. Lines of code per JS file
+    
+    ```
+    At what point do we consider a JS file "too large"?
+    ```
+    
   3. `<head>` vs `<body>`
+  
+    ```
+    True or False: It is good practice to put your scripts within the <head> tag of an HTML document.
+    
+    // output: False; browsers render pages more slowly when scripts are in the <head> tag (as opposed to <body>).
+    ```
+
   4. `'` vs `"`
+  
+    ```
+    Which of the following variable declarations will properly create a string in JavaScript?
+    
+    A) var message = "Choice A.";
+    B) var message = 'Choice B.';
+    C) Both A) and B) will properly create a string.
+    
+    // output: C); Single and double quotes both work fine, but it is best practice to choose one or the other for your project and stick to it.
+    ```
+
   5. Formatting
       - White space
       - Curly bracket placement
