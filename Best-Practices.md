@@ -55,14 +55,96 @@
     ```
 
   5. Formatting
-      - White space
+      - Whitespace
+        - 1) Whitespace between keywords/operators and parameters
+        ```javascript
+        if (condition) { ... }
+        ```
+        - 2) No whitespace
+        ```javascript
+        if(condition){ ... }
+        ```
+        - 1) is preferred for readability purposes. 
       - Curly bracket placement
+        - 1) Inline placement
+        ```javascript
+        if (condition) {
+
+        } else {
+        
+        }
+        ```
+        - 2) Line break placement
+        ```javascript
+        if (condition) 
+        {
+        
+        }
+        else 
+        {
+        
+        }
+        ```
+        - 1) is good for reducing the number of lines in a file. 
+        - 2) more explicitly separates function/conditional statement definitions.
+        - Be consistent with whichever you choose.
       - Line breaks
+        - No general rules of thumb here. Be conscious about breaking up consecutive
+        lines of statements into logical chunks.
       - Semi-colons (yes or no?)
+        - Pros of using semicolons: 
+          - Consistent with popular languages
+          - Promotes readability and writability if accustomed to languages that use them
+        - Pros of omitting semicolons:
+          - Less typing
+        - Be consistent with whichever you choose.
   6. Shorthand expressions
+    - Although they can make trivial statements more concise, beware of nesting complicated logic
+    inside shorthands. You will sacrifice readability for concision.
+    - Good example
+    ```javascript
+    // Original
+    var biggerThanFive;
+    if (x > 10) {
+        biggerThanFive = 'Yes';
+    } else {
+        biggerThanFive = 'No';
+    }
+    
+    // Shorthand
+    var biggerThanFive = x > 10 ? 'Yes' : 'No';
+    ```
+    - Comprehensive list: https://www.sitepoint.com/shorthand-javascript-techniques/
   7. Variable declaration
+    - Good practice (locally scoped):
+    ```javascript
+    var myObj = {};
+    ```
+    - Bad practice (unintentional global scope)
+    ```javascript
+    myObj = {};
+    ```
   8. `that` vs `thisView` vs `self`
+    - You will often need to declare a local copy of the current view for the
+    sake of scoping:
+    ```javascript
+    function myFunction() {
+        var thisView = this;
+
+        var anotherFunction = function() {
+            thisView.outsideFunction();
+        };
+    }
+    ```
+    - The name that you use for this copy is really a matter of preference,
+    but to be more descriptive, thisView is usually a good choice for naming.
   9. Use of third-party libraries
+    - Don't know what to put this for one. Does tethering your JS closely to
+    third-party libraries introduce instability if the third parties change
+    their interfaces eventually?
+
+    - Or should you use third-party libraries to avoid reinventing the wheel
+    everytime you want to do something relatively complex?
       
 #### Worst Practices
 > These are coding practices to avoid and habits that you should unlearn.
