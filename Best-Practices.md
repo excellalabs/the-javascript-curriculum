@@ -346,8 +346,7 @@ Lorem ipsum
 
       - “Build Once, Deploy many”
       - Development, Test, Production environments
-      
-      Each check in by a developer, pipeline is run: 
+      - Each check in by a developer, pipeline is run: 
         - Unit tests
         - Static code analysis
         - Integration tests
