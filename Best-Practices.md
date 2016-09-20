@@ -282,19 +282,89 @@ Lorem ipsum
 #### Agile Engineering 
 > These are Agile Engineering best practices
 
-  1. Test Driven Development (TDD)
-    
-    **Why should you do it?** Because it's awesome.
-    1. Unit Testing
-    
-    Lorem ipsum
-    > **Recommended Tool** `jasmine`
-  1. SOLID
-  
-  Lorem ipsum
-  1. Clean Code
-  
-  Lorem ipsum
+  1. TDD: Test Driven Development
+    1. Red : write small failing tests
+    2. Green : write small amount of passing code
+    3. Refactor : improve the code
+
+  2. Unit Testing
+    - Define the behavior of production code
+    - Single module only
+    - Isolates behavior
+    - Reusable
+    - Should be FIRST
+       - **F**ast
+       - **I**solated
+       - **R**epeatable
+       - **S**elf-verifying
+       - **T**imely
+
+  3. SOLID Principles
+    - Single Responsibility Principle
+      - Each function should only have one responsibility as well as each module
+    - Open Closed Principle
+       - Software entities (functions) should be open for extension, but closed for modification
+    - Liskov Substitution Principle (ES 2015+)
+      - Derived classes must be substitutable for their base classes. Code to abstraction
+    - Interface Segregation Principle (TypeScript)
+      - Clients should not be forced to depend upon interfaces that they do not use
+      - Interfaces are interchangeable with option hashes
+    - Dependency Inversion Principle (TypeScript)
+      - Depend on abstractions, not on concretions
+
+  4. Code Smells
+    1. Duplicate code
+    2. Long methods
+    3. Big classes/files
+    4. Empty catch clauses
+    5. Significant use of statics/globals
+    6. Variables with wide scope
+    7. Poorly named variables
+    8. Switch or with statements
+    9. Unnecessary complexity
+    10. Comments
+
+  5. Legacy Code
+    - Identify SOLID principles that are violated by legacy code
+    - Write unit tests for existing code
+    - Refactor code without breaking functionality or unit tests
+    - Note: applies to back end code, front end code might require integration tests
+
+  6. Continuous Integration & Deployment
+    #### Continuous Integration
+      _Team members integrate code together frequently, each integration being tested by an automated build to detect errors quickly_
+
+    - Build - automated, self-testing, everything included
+    - Unit, integration, system, acceptance, UI, performance tests - run each build 
+    - Versioning - single source repository
+    - Deployment - automated
+    - Reports - visible to everyone
+    - Notification
+    - Git workflow with pull requests, etc. 
+
+    #### Continuous Deployment
+
+      - “Build Once, Deploy many”
+      - Development, Test, Production environments
+      
+      Each check in by a developer, pipeline is run: 
+        - Unit tests
+        - Static code analysis
+        - Integration tests
+        - Deploy
+        - Acceptance tests
+
+  7. Technical Debt
+
+    _Neglecting design = borrowing money
+    Slower development = paying interest on the loan
+    Time spent on bad code = interest on debt
+    Refactoring = paying off principal debt_
+      - As time increases, more technical debt increases cost of change
+      - Bad design pays off in short run, good design pays off in long run
+      - Intentional “Good” debt
+      - Cycle
+        - pressure -> take debt -> fail to pay back -> debt accrual -> reduced velocity -> pressure -> etc
   
 #### Industry Practices
 > Here are some notable examples of what successful tech companies use and do. Pick what best works for you.
