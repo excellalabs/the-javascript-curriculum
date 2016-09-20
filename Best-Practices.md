@@ -29,8 +29,9 @@
       ```
       
   2. Lines of code per JS file and refactoring
-    
-    JavaScript code should adhere to the SOLID principles just like with any other language. As a general rule, you should strive to keep JS files down to the size of a screen display (i.e. no need to scroll). As an absolute maximum, any file that goes beyond 300 lines of code should be considered for refactoring.
+    - JavaScript code should adhere to the SOLID principles just like with any other language. 
+    - As a general rule, you should strive to keep JS files down to the size of a screen display (i.e. no need to scroll). 
+    - As an absolute maximum, any file that goes beyond 300 lines of code should be considered for refactoring.
     
   3. `<head>` vs `<body>`
   
