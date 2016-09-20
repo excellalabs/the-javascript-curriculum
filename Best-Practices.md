@@ -28,11 +28,9 @@
       // output: true
       ```
       
-  2. Lines of code per JS file
+  2. Lines of code per JS file and refactoring
     
-    ```
-    At what point do we consider a JS file "too large"?
-    ```
+    JavaScript code should adhere to the SOLID principles just like with any other language. As a general rule, you should strive to keep JS files down to the size of a screen display (i.e. no need to scroll). As an absolute maximum, any file that goes beyond 300 lines of code should be considered for refactoring.
     
   3. `<head>` vs `<body>`
   
@@ -105,14 +103,14 @@
     ```javascript
     // Original
     var biggerThanFive;
-    if (x > 10) {
+    if (x > 5) {
         biggerThanFive = 'Yes';
     } else {
         biggerThanFive = 'No';
     }
     
     // Shorthand
-    var biggerThanFive = x > 10 ? 'Yes' : 'No';
+    var biggerThanFive = x > 5 ? 'Yes' : 'No';
     ```
     - Comprehensive list: https://www.sitepoint.com/shorthand-javascript-techniques/
   7. Variable declaration
@@ -124,6 +122,7 @@
     ```javascript
     myObj = {};
     ```
+      * Writing 'use strict' at the top of a JS file will prevent this from being allowed.
   8. `that` vs `thisView` vs `self`
     - You will often need to declare a local copy of the current view for the
     sake of scoping:
@@ -138,13 +137,17 @@
     ```
     - The name that you use for this copy is really a matter of preference,
     but to be more descriptive, thisView is usually a good choice for naming.
-  9. Use of third-party libraries
-    - Don't know what to put this for one. Does tethering your JS closely to
-    third-party libraries introduce instability if the third parties change
-    their interfaces eventually?
-
-    - Or should you use third-party libraries to avoid reinventing the wheel
-    everytime you want to do something relatively complex?
+    - Arrow functions, one of ES6's new features, allows us to inherit scope from the immediate
+    parent's scope inside a nested function.
+    ```javascript
+    function myFunction() {
+      this.number = 1
+      
+      var anotherFunction = () => {
+        this.number = 2 // Valid and cleaner!
+      }
+    }
+    ```
       
 #### Worst Practices
 > These are coding practices to avoid and habits that you should unlearn.
@@ -301,3 +304,5 @@ Lorem ipsum
 > These are easy to learn and use tools.
 
 Lorem ipsum
+
+#### Use of third-party libraries
