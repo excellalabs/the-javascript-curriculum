@@ -283,12 +283,12 @@ Lorem ipsum
 #### Agile Engineering 
 > These are Agile Engineering best practices
 
-  1. TDD: Test Driven Development
+ 1. TDD: Test Driven Development
     1. Red : write small failing tests
     2. Green : write small amount of passing code
     3. Refactor : improve the code
 
-  2. Unit Testing
+ 2. Unit Testing
     - Define the behavior of production code
     - Single module only
     - Isolates behavior
@@ -377,6 +377,24 @@ Lorem ipsum
 Lorem ipsum
 
 #### Third-Party Libraries
-> How to pick the most useful external libraries for your project.
+> Here are some things to ask yourself and your team before importing a third party library.
 
-Lorem ipsum
+1. Do you need the third party Library?
+	
+	Adding a third party library dependency into your project comes with some inherit risk. Make sure that whatever functionality you are getting out of the third party library is worth the risk and not something that you could easily and quickly implement yourself.
+
+2. Do you have the rights to use it?
+	
+	Just because you were able to find the code for a third party library online does not necessarily mean you can use it for your project. Make sure to read the Licence for the library to make sure that the agreements work for your project and future distribution plans.
+
+3. Is the project well maintained?
+
+	Make sure that the project is well maintained. This does not necessarily mean that the project is being constantly updated, but that found bugs are addressed quickly, updates are made when needed to to keep the library functioning, and that the code is well tested.
+
+4. Is the project stable?
+	
+	Having stable working third party libraries is crucial to development. If the project has a lot of bugs that it needs to address or is constantly adding new features that either break old functionality or requires old code to be updated to use new standards it may not be worth using. In particular be wary of libraries that are in alpha or beta.
+
+5. How active is the community and the dev team?
+		
+	Its really helpful to have an active community or dev team associated with a third party library. Its very possible to run into problems with the library that you wont be able to figure out yourself due to lack of knowledge. Being able to contact experienced users or the libraries devs to ask questions or for help can be invaluable.
