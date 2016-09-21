@@ -158,119 +158,120 @@
 
   1. Overusing jQuery
       
-      Most modern applications use jQuery as an ancillary library, opting for a js framework with features that jQuery doesn't provide (data-binding, routing, etc.) as the primary front-end framework. As such, methods and functions provided by the primary framework should be used before jQuery usage is considered.  Additionally:
-      -  Avoid making duplicate jQuery calls.  Instead, store the result of the initial call in a variable. 
-      
+      Most modern applications use jQuery as an ancillary library, opting for a js framework with features that jQuery doesn't provide (data-binding, routing, etc.) as the primary front-end framework. Because of this, methods and functions provided by the primary framework should be used before jQuery usage is considered.  Additionally:
+      -  Avoid making duplicate jQuery calls.  Instead, store the result of the initial call in a variable.
+
+
+      ```HTML
+      <form>
+        <div class="alert-error hide" id ="errorDiv">
+          <span id="errorDescription"></span>
+        </div>
+        <div>
+          <label>First Name</label>
+          <input type="text" />
+        </div>
+        .
+        .
+        .
+      </form>
+      ``` 
       
       Bad Practice
+
       ```javascript
-      $('.descriptionDiv').find('').val();
+      function showErrorMessage() {
+	      $('form').find('#errorDiv').html('An error occurred.')
+        $('form').find('#errorDiv').show();
+      }
       ```
-     
       
      Good Practice
+     
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
+      function showErrorMessage() {
+        var errorDiv = $('form').find('#errorDiv');
+	      errorDiv.html('An error occurred.')
+        errorDiv.show();
       }
       ```
       
       -  Ensure that the most efficient jQuery call is used
-      
-      
-      
-      Bad Practice
-      ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
-      }
-      ```
-     
-      
-     Good Practice
-      ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
-      }
-      ```
+        ```//I'm omitting this as there have been browser optimizations that make this less of a concern.  Feel free to object . . . by populating this.```
+
   2. Relying on Comments to Clarify Overly Complex or Confusing Code
       
-      
+      Complex code should be self-documented and shoud not be dependent on comments.  Comments can be used, but they should be used sparingly. 
       
       
       Bad Practice
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
-      }
+      /*The code below sorts an array of ints, removes the largest and smallest ints from the array, and sums the remaining array.  If the given array is empty, it returns 0.*/
+      sumArray = a => a ? a.sort((x, y) => x - y).slice(1, -1).reduce((s, e) => s + e, 0) : 0
       ```
      
       
      Good Practice
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
+      if(a) {
+        var sortedArray = a.sort((x, y) => x - y);
+        var arrayWithoutBigSmallInts = sortedArray.slice(1, -1);
+        var sumArray = arrayWithoutBigSmallInts.reduce((s, e) => s + e, 0);
       }
       ```
   3. Storing JavaScript Code in One File
       
-      Here's where the explanation goes.
+      In the past, it was best practice to move embedded javascript found in HTML files to one external javascript file as, at the time, there wasn't much javascript code being used.  Since the amount of javascript being used has significantly increased, that is no longer an acceptable approach.  Javascript logic should be broken up into small files, in accordance with the best practices of whatever framework is in use in a given application.
      
   4. Manipulating Globals
       
-      Here's where the explanation goes.
+      ```\\Is it necessary to have this section since it's being referenced under best practices?```
       
-      
-      Bad Practice
-      ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
-      }
-      ```
-     
-      
-     Good Practice
-      ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
-      }
-      ```
   5. Manipulating Prototypes (manually or in frameworks like date.js)
       
-      Here's where the explanation goes.
+      Manipulating prototypes is a bad practice because it changes the expected behavior of any instances of objects with updated prototypes.  This is a particularly bad practices when done on built-in javascript objects.  Instead, create a new, clearly-named object type.
       
       
       Bad Practice
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
-      }
+      Number.prototype.toString = function() { return 'the string of my choosing'; };
+      var t = new Number(4);
+
+      //t.toString() === 'the string of my choosing';
       ```
      
       
-     Good Practice
+      Good Practice
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
+      function MyNumber() { 
+          Number.call(this); 
       }
+      MyNumber.prototype = Object.create(Number.prototype);
+      MyNumber.prototype.toString = function() {
+        return 'the string of my choosing';
+      };
+      var myNum = new MyNumber(4);
+
+      //myNum.toString() === 'the string of my choosing'
       ```
   6. Using Browser Detection Instead of Feature Detection
       
-      Here's where the explanation goes.
+      Performing browser detection to determine whether specific features are available is prone to error because it's hard to account for every version of every browser over time.  Instead, use feature detection, in which you test whether a feature is available.
       
       
       Bad Practice
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
+      var isSafari = navigator.userAgent.indexOf("Safari") > -1;
+      if (isSafari) {
+          var thisMouseEvent = new MouseEvent('typing');
       }
       ```
      
       
      Good Practice
       ```javascript
-      function test() {
-       console.log("look ma`, no spaces");
+      if (typeof MouseEvent !== 'undefined') {
+          var thisMouseEvent = new MouseEvent('typing');
       }
       ```
 
