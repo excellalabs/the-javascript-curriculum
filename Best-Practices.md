@@ -376,4 +376,7 @@ Lorem ipsum
 
 Lorem ipsum
 
-#### Use of third-party libraries
+#### Third-Party Libraries
+> How to pick the most useful external libraries for your project.
+
+Lorem ipsum
