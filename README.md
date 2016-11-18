@@ -25,6 +25,7 @@ It is *highly recommended* that your `fork` this repository, keep track of your 
 
 ### Pre-Requisites
 - [ ] Install Node.js, so you can run the self-learning tools: [https://nodejs.org/](https://nodejs.org/)
+  - If you're running on Windows, check out these [tips](https://johnpapa.net/tips-for-running-node-and-npm-on-windows/).
 - [ ] Visit and familiarize yourself with [npm](https://www.npmjs.com/)
 - [ ] Get a good text editor/IDE.
   - Text Editor
