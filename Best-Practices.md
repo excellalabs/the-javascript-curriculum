@@ -148,10 +148,7 @@
         this.number = 2 // Valid and cleaner!
       }
     }
-    ```
-      
-#### Worst Practices
-> These are coding practices to avoid and habits that you should unlearn.
+    ```     
 
 #### Obsolete Practices
 > These are coding practices that were once good but have become dated and should be avoided.
@@ -275,11 +272,6 @@
       }
       ```
 
-#### Good Practices
-> Universally applicaple and common sense coding and software development practices.
-
-Lorem ipsum
-
 #### Agile Engineering 
 > These are Agile Engineering best practices
 
@@ -365,16 +357,6 @@ Lorem ipsum
       - Intentional “Good” debt
       - Cycle
         - pressure -> take debt -> fail to pay back -> debt accrual -> reduced velocity -> pressure -> etc
-  
-#### Industry Practices
-> Here are some notable examples of what successful tech companies use and do. Pick what best works for you.
-
-Lorem ipsum 
-
-#### Tooling
-> These are easy to learn and use tools.
-
-Lorem ipsum
 
 #### Third-Party Libraries
 > Here are some things to ask yourself and your team before importing a third-party library.
