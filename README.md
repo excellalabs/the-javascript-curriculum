@@ -1,5 +1,5 @@
 # The JavaScript Curriculum
-## A JavaScript Curriculum for Learners
+## A JavaScript Curriculum for Active Learners
 
 ### About
 This curriculum is meant to equip you with the resources you need to get yourself up to speed with JavaScript as a language, and use it to create full and complete solutions. Motivating yourself to learn something new can be a challenge, thusly this curriculum is focused on the learning-by-doing methodology.
