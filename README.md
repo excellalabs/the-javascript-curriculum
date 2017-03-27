@@ -60,6 +60,8 @@ The Internet is a vast cache of information and if you know how to navigatge it 
   - Additional info https://github.com/sethvincent/javascripting
 
 ### Become a Better JavaScript Developer
+- [ ] Learn the best practices of writing clean JavaScript code.
+  - Run `npm install -g js-best-practices`
 - [ ] Learn the details of Scope, Scope Chains, Closures, and Garbage Collection.
   - Run `npm install -g scope-chains-closures`
 - [ ] Learn fundamental functional programming features of JavaScript in vanilla ES5.
@@ -91,12 +93,19 @@ The Internet is a vast cache of information and if you know how to navigatge it 
  - [ ] CSS 3
   - http://www.w3schools.com/css/css3_intro.asp
   
+### UI Frameworks
+ - [ ] ReactJS https://facebook.github.io/react/
+  
 ### Learn Single Page Applications (SPAs)
- - [ ] Angular.js
-  - https://angularjs.org/
- - Learn how to create SPAs by importing code from multiple JavaScript files
-  - [ ] Angular dependency injection
-  - [ ] [Require.js](http://requirejs.org/)
+ - [ ] Legacy Angular.js https://angularjs.org/
+ - [ ] Angular 2+ https://angular.io/
+ - *Building Scalable and Beautiful Angular Apps Series*: Learn how to properly architect front-end applications
+  - [ ] [Leveraging Existing Skills and Pushing the Envelope](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-one)
+  - [ ] Web App Packaging and Publishing Best Practices
+  - [ ] Organized Code and Scalable Angular Architecture
+  - [ ] Reusable Components, Templates, and Services
+  - [ ] Default Beauty and Great Mobile-First UX with Angular Material
+  - [ ] Navigation Lifecycle, Authentication Hooks, and Role Based Navigation
   - [ ] Use npm modules and node-style require() in the browser with browserify.
     - `npm install -g browserify-adventure`
 
@@ -142,5 +151,6 @@ The Internet is a vast cache of information and if you know how to navigatge it 
   - `Getting started with MongoDB and Node.js`
 
 ### Mobile Development
-- [ ] Ionic
- - http://ionicframework.com/
+- [ ] Cordova https://cordova.apache.org/
+- [ ] Ionic http://ionicframework.com/
+- [ ] React Native https://facebook.github.io/react-native/
