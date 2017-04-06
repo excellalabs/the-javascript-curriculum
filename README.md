@@ -98,15 +98,15 @@ The Internet is a vast cache of information and if you know how to navigatge it 
   
 ### Learn Single Page Applications (SPAs)
  - [ ] Legacy Angular.js https://angularjs.org/
- - [ ] Angular 2+ https://angular.io/
+ - [ ] Angular 4 https://angular.io/
  - *Building Scalable and Beautiful Angular Apps Series*: Learn how to properly architect front-end applications
   - [ ] [Leveraging Existing Skills and Pushing the Envelope](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-one)
-  - [ ] Web App Packaging and Publishing Best Practices
-  - [ ] Organized Code and Scalable Angular Architecture
-  - [ ] Reusable Components, Templates, and Services
-  - [ ] Default Beauty and Great Mobile-First UX with Angular Material
-  - [ ] Navigation Lifecycle, Authentication Hooks, and Role Based Navigation
-  - [ ] Use npm modules and node-style require() in the browser with browserify.
+  - [ ] [Web App Packaging and Publishing Best Practices](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-two)
+  - [ ] [Organized Code and Scalable Angular Architecture](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-three)
+  - [ ] [Reusable Components, Templates, and Services](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-four)
+  - [ ] [Default Beauty and Great Mobile-First UX with Angular Material](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-five)
+  - [ ] [Navigation Lifecycle, Authentication Hooks, and Role Based Navigation](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-6)
+  - [ ] [Use npm modules and node-style require() in the browser with browserify.](http://browserify.org/)
     - `npm install -g browserify-adventure`
 
 ### Persist Data
