@@ -99,7 +99,7 @@ The Internet is a vast cache of information and if you know how to navigatge it 
 ### Learn Single Page Applications (SPAs)
  - [ ] Legacy Angular.js https://angularjs.org/
  - [ ] Angular 4 https://angular.io/
- - *Building Scalable and Beautiful Angular Apps Series*: Learn how to properly architect front-end applications
+ - *Building Scalable and Beautiful AngularJS Apps Series*: Learn how to properly architect front-end applications
   - [ ] [Leveraging Existing Skills and Pushing the Envelope](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-one)
   - [ ] [Web App Packaging and Publishing Best Practices](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-two)
   - [ ] [Organized Code and Scalable Angular Architecture](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-three)
