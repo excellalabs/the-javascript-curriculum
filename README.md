@@ -58,6 +58,9 @@ The Internet is a vast cache of information and if you know how to navigatge it 
   - Run `npm install -g javascripting`
   - Then `javascripting`
   - Additional info https://github.com/sethvincent/javascripting
+  
+### A Re-Introduction to JavaScript
+ - [ ] Introduction to modern JavaScript by [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 
 ### Become a Better JavaScript Developer
 - [ ] Learn the best practices of writing clean JavaScript code.
