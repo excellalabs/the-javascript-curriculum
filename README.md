@@ -63,8 +63,7 @@ The Internet is a vast cache of information and if you know how to navigatge it 
  - [ ] Introduction to modern JavaScript by [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 
 ### Become a Better JavaScript Developer
-- [ ] Learn the best practices of writing clean JavaScript code.
-  - Run `npm install -g js-best-practices`
+- [ ] Practice Best Practices -- see section below
 - [ ] Learn the details of Scope, Scope Chains, Closures, and Garbage Collection.
   - Run `npm install -g scope-chains-closures`
 - [ ] Learn fundamental functional programming features of JavaScript in vanilla ES5.
@@ -89,6 +88,18 @@ The Internet is a vast cache of information and if you know how to navigatge it 
  - [ ] Learn a web framework
   - [ ] Hapi.JS `npm install -g makemehapi` http://hapijs.com/
   - [ ] Express `npm install -g expressworks` http://expressjs.com/
+  
+### Practice Best Practices
+ - [ ] Learn the best practices of writing clean JavaScript code.
+  - Run `npm install -g js-best-practices`
+ - [ ] Learn a unit testing framework
+  - [ ] Jasmine
+    - Working Example: https://github.com/duluca/minimal-node-web-server/​
+      - Run `npm test`
+      - See `specs` folder for implementation
+    - Helpful Resources
+      - [Spy Cheatsheet](http://tobyho.com/2011/12/15/jasmine-spy-cheatsheet/)
+      - [How to Spy on JavaScript Methods](http://www.htmlgoodies.com/html5/javascript/spy-on-javascript-methods-using-the-jasmine-testing-framework.html)
 
 ### Web
  - [ ] HTML 5
