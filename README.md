@@ -47,6 +47,7 @@ The Internet is a vast cache of information and if you know how to navigatge it 
 - Specific questions are far more likely to get answered, than general/generic questions.
 
 ### Absolute Beginners
+- [ ] Don't how to work the console, command line, CLI or bash? Start with the basics [here](https://swcarpentry.github.io/shell-novice/01-intro/)
 - [ ] Open up command line/console. Type in `node`, do you see `> `? If yes *great*, hit `Ctrl+C` to terminate the currently running `node` process. If no, then see `How to ask for help`.
 - [ ] Type in `npm`, do you see `Usage: npm <command>`?
 - You're ready to start learning, using the self guided workshoppers. Good luck! 
